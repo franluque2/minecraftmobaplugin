@@ -1,0 +1,18 @@
+main: dev.bigmen.spigot.minecraftmoba.MinecraftMobaPlugin
+name: MinecraftMoba
+version: 0.1
+api-version: 1.21
+description: This plugin contains utilities to run a MOBA-Like Map in Minecraft
+commands:
+  spawnlanemob:
+    description: Spawns a custom lane mob with AI behavior.
+    usage: /spawnlanemob <mobType> <teamName> <spawnX> <spawnY> <spawnZ> <waypointX1> <waypointY1> <waypointZ1> ...
+    permission: minecraftmoba.spawnlanemob
+  spawnjunglemob:
+    description: Spawns a custom jungle mob with a home radius.
+    usage: /spawnjunglemob <mobType> <spawnX> <spawnY> <spawnZ> <radius>
+    permission: minecraftmoba.spawnjunglemob
+  spawntowermob:
+    description: Spawns a tower mob with a home radius
+    usage: /spawntowermob <mobType> <team> <spawnX> <spawnY> <spawnZ> <radius>
+    permission: minecraftmoba.spawntowermob
